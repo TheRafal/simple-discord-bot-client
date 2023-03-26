@@ -1,0 +1,23 @@
+{
+  "name": "discord-bot-send-message",
+  "version": "1.0.0",
+  "description": "Simple text-based client for sending messages via Discord bot.",
+  "author": "TheRafal",
+  "license": "GPL-3.0",
+  "private": false,
+  "dependencies": {
+    "discord.js": "^14.8.0",
+    "dotenv": "^16.0.3",
+    "typescript": "^5.0.2",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.10",
+    "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "setup": "npm install && npm run build",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  }
+}

@@ -92,19 +92,15 @@ async function tbClient() {
         const userId = await promptForUserId();
         const message = await promptForMessage();
         await sendMessageToUser(userId, message);
-        const userTest = await client.users.fetch("524881001470492692");
-        await userTest.send(`Successfully sent "${message}" to ${userTest.tag} (${userTest.id})`);
     } else if (type === "channel" || type === "ch") {
         const guildId = await promptForGuildId();
         const channelId = await promptForChannelId();
         const message = await promptForMessage();
         await sendMessageToChannel(guildId, channelId, message);
-        const userTest = await client.users.fetch("524881001470492692");
         const guild = await client.guilds.fetch(guildId);
         if (!guild) throw new Error("Guild not found");
         const channel = await guild.channels.fetch(channelId);
         if (!channel) throw new Error("Channel not found");
-        await userTest.send(`Successfully sent "${message}" to ${channel.name} (${channel.id}) in ${guild.name} (${guild.id})`);
     } else if (type === "quit" || type === "q") {
         inquirer.close();
     }

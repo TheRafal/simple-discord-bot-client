@@ -1,6 +1,6 @@
 # Text-based Discord Bot Client
 
-I was bored and didn't want to work on frontend so I wrote this to send some messages to my friends via bots. If I'll get bored once more, I'll probably add some new features.
+I was bored and didn't want to work on frontend or set up containers on server, so I wrote this to send some messages to my friends via bots. If I'll get bored once more, I'll probably add some new features.
 The client is text-based for now, maybe I'll create some UI later. 
 
 # Installation & Setup

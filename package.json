@@ -1,5 +1,5 @@
 {
-  "name": "discord-bot-send-message",
+  "name": "simple-discord-bot-client",
   "version": "1.0.0",
   "description": "Simple text-based client for sending messages via Discord bot.",
   "author": "TheRafal",
